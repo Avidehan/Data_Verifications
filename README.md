@@ -1,4 +1,5 @@
-• I use Selenium Library in Python.\
+I use selenium to simulate a human transition on the price history graph \
+• I  use Selenium Library in Python.\
 • ChromeDriver version 95.0.4638.69.\
 • Initially the site blocked access by selenium that in any access the site would not have raised the graph, I added options that simulate as close as possible to a normal person.\
 • Sometimes the site does manage to identify the access as a robot, so every time a blockage appeared, I replaced the IP with a plugin that I installed locally on the computer.\
