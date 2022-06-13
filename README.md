@@ -1,8 +1,27 @@
-I use selenium to simulate a human transition on the price history graph \
-• I  use Selenium Library in Python.\
-• ChromeDriver version 95.0.4638.69.\
-• Initially the site blocked access by selenium that in any access the site would not have raised the graph, I added options that simulate as close as possible to a normal person.\
-• Sometimes the site does manage to identify the access as a robot, so every time a blockage appeared, I replaced the IP with a plugin that I installed locally on the computer.\
-• There are two types of apartments on the site that have their price history, apartments for sale, and apartments sold.\
-• The code knows how to deal with these two situations by checking whether it is sold or not and each of them has a different way of going through the graph.\
-• In case of blockage by captcha, a message will be issued, and an ip must be replaced
+In this task I was asked to perform web scraping from "zillow.com" using selenium, from a URL of an apartment at a specific address.
+The specific requirement is to take the data from the graph and not from other objects on the web-page*
+
+The challenges posed by this task definition were as follows:
+
+The graph size was different for each address.
+* the site blocked access by selenium. in any access the site would not have raised the graph
+* The structure of the web page itself has changed depending on the status of the apartment, whether it has been “sold” or is “for sale”.
+* The key of the requested data within the DOM was an unknown variable
+
+In order to solve these problems I have adopted the following strategies:
+ * Check the graph at regular intervals and remove duplicates
+* Sending various arguments in headers and using a user agent
+* Building various functions that correspond to both the status of "for sale" and the status of "sold"
+* Using parent-child tags.
+* When the site does manage to identify the access as a robot, a blockage appeared and I replaced the IP with a plugin that I installed locally on the computer.
+* In case of blockage by captcha, a message will be issued, and an ip must be replaced
+* I added options that simulate as close as possible to a normal person.
+
+
+
+
+In addition, I performed parallel tests using the python library to directly run the GUI
+
+
+
+* The complete task definition is in the file… ..
